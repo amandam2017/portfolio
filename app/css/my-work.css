@@ -1,0 +1,31 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fff; }
+
+body {
+  min-height: 100vh; }
+
+.my-work {
+  padding-top: 50px; }
+
+.my-work:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.col-4 {
+  padding: 10px; }
+  @media (min-width: 768px) {
+    .col-4 {
+      width: 50%;
+      float: left; } }
+  @media (min-width: 1024px) {
+    .col-4 {
+      width: 25%;
+      float: left; } }
+
+.col-4:after {
+  content: "";
+  display: table;
+  clear: both; }

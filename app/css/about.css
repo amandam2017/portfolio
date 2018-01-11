@@ -1,0 +1,98 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: #fff; }
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background: transparent;
+  flex: 1; }
+
+.about-me {
+  padding-top: 30px; }
+  .about-me__text {
+    padding-right: 15px; }
+  .about-me__image {
+    padding-left: 15px;
+    text-align: center; }
+    .about-me__image img {
+      width: 100%; }
+
+h1 {
+  font-size: 34px;
+  font-weight: normal;
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Shadows Into Light Two', cursive;
+  color: #2b4608;
+  padding-top: 30px; }
+
+h2 {
+  color: #2b4608;
+  font-weight: normal;
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Shadows Into Light Two', cursive; }
+
+h4 {
+  text-align: left;
+  font-size: 22px;
+  color: #2b4608;
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Shadows Into Light Two', cursive;
+  font-weight: normal; }
+
+p {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 22px;
+  color: #2b4608; }
+
+.col-6 {
+  width: 100%;
+  float: none; }
+  @media (min-width: 768px) {
+    .col-6 {
+      width: 50%;
+      float: left; } }
+  @media (min-width: 1024px) {
+    .col-6 {
+      width: 50%;
+      float: left; } }
+
+.col-6:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.col-3 {
+  width: 33.33%;
+  float: left; }
+
+.col-3:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.amandamaarman2017 {
+  position: absolute;
+  background: #829071;
+  z-index: 3;
+  margin-top: 30px; }
+  .amandamaarman2017 p {
+    color: #fff; }
+
+.amanda img {
+  width: 100%;
+  position: relative; }
+
+.manda {
+  position: absolute;
+  background: #829071;
+  z-index: 3;
+  margin-top: 30px; }
+  .manda p {
+    color: #fff; }
+
+.picture img {
+  width: 100%;
+  position: relative; }

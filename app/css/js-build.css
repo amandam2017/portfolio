@@ -1,0 +1,86 @@
+.js-calculator {
+  width: 280px;
+  margin: 0 auto;
+  display: block;
+  background-color: #aba89b; }
+
+.icalculator {
+  width: 280px;
+  border: 2px solid red;
+  background-color: #363531; }
+  .icalculator .input {
+    width: 254px;
+    height: 60px;
+    text-align: right;
+    font-size: 30px;
+    border-radius: 8px;
+    margin: 3px; }
+  .icalculator input {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 8px; }
+
+input {
+  outline: none;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  border-radius: 8px;
+  margin: 3px; }
+  input.button--equal {
+    width: 130px; }
+  input.button--clear {
+    width: 130px; }
+
+.content {
+  text-align: center; }
+
+p, h2 {
+  text-align: center; }
+
+.stopwatch {
+  max-width: 300px;
+  margin: 0 auto;
+  background: orange;
+  border-radius: 5px;
+  box-shadow: 0 4px rgba(0, 0, 0, 0.75), 0 0 1px rgba(0, 0, 0, 0.15);
+  padding: 15px; }
+  .stopwatch, .stopwatch * {
+    transition: all 0.15s ease-out; }
+  .stopwatch .controls {
+    display: flex; }
+    .stopwatch .controls button {
+      flex-grow: 1;
+      margin: 0 5px 4px;
+      padding: 5px 0;
+      box-shadow: 0 4px rgba(0, 0, 0, 0.75);
+      border: 0;
+      outline: 0;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold; }
+      .stopwatch .controls button:active {
+        margin-bottom: 0;
+        margin-top: 4px;
+        box-shadow: none; }
+    .stopwatch .controls .start {
+      background: green; }
+      .stopwatch .controls .start:hover {
+        background: #6e6; }
+    .stopwatch .controls .stop {
+      background: orange; }
+      .stopwatch .controls .stop:hover {
+        background: #e66; }
+    .stopwatch .controls .reset {
+      background: red; }
+      .stopwatch .controls .reset:hover {
+        background: #66e; }
+  .stopwatch .display {
+    font-size: 50px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 10px; }
+    .stopwatch .display :not(:last-child):after {
+      content: ':'; }

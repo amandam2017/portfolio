@@ -1,0 +1,120 @@
+section{
+	background-size: cover;
+	width: 100%;
+	height: 650px;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.lightning{
+	background-image: url('../images/lightning.png');
+	background-repeat: repeat;
+	width: 100%;
+	height: 650px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: animateOne 10s infinite linear;
+}
+
+
+@keyframes animateOne 
+{
+	0%
+	{
+		background-position: 0px 0px;
+		transform:scale(1) rotate(0deg);
+	}
+	100%
+	{
+		background-position: 100px 650px;
+		transform:scale(2) rotate(180deg);
+	}
+}
+
+
+.lightning{
+
+	@keyframes bounceOut {
+	  0% {
+	    transform: scale(5);
+	    opacity: 0;
+	  }
+	  50% {
+	    transform: scale(4);
+	    opacity: 1;
+	  }
+	  100% {
+	    transform: scale(0.15);
+	  }
+	}
+}
+
+
+
+// body{
+// 	margin: 0;
+// 	padding:0;
+// }
+
+// body{
+// 	animation: pulse 10s infinite;
+// }
+
+// @keyframes pulse{
+// 	0%{
+// 		background: red;
+// 	}
+// 	10%{
+// 		background: #252452;
+// 	}
+// 	20%{
+// 		background: #bcbcbc;
+// 	}
+
+// 	25%{
+// 		background: #c3b658;
+// 	}
+// 	35%{
+// 		background: purple;
+// 	}
+// 	45%{
+// 		background: #457845;
+// 	}
+
+// 	50%{
+// 		// background: yellow;
+// 		background-image: url('../images/lightning.png');
+// 		background-repeat: repeat;
+// 		width: 100%;
+// 		height: 650px;
+// 		position: absolute;
+// 		top: 0;
+// 		left: 0;
+// 		animation: animateOne 10s infinite linear;
+// 	}
+
+// 	65%{
+// 		background: #875562;
+// 	}
+// 	70%{
+// 		background: #875896;
+// 	}
+
+// 	75%{
+// 		background: green;
+// 	}
+
+// 	85%{
+// 		background: #658974;
+// 	}
+// 	90%{
+// 		background: #444444;
+// 	}
+
+// 	100%{
+// 		background: #569856
+// 		// background-image: url('../images/background-image.jpg');
+// 	}
+// }

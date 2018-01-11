@@ -1,0 +1,240 @@
+body {
+  background: #1b2431;
+  color: #fff; }
+
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+  box-sizing: border-box; }
+
+h4 {
+  color: #fff; }
+
+h1 {
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 50px 0 15px 0; }
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+  color: #7f8fa4;
+  margin: 0; }
+
+.head__title {
+  padding: 20px 0;
+  margin: 0;
+  background: #273142;
+  color: #fff; }
+  .head__title:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .head__title .head__title--left {
+    float: left; }
+  .head__title .head__title--right {
+    float: right; }
+
+.col-4 {
+  width: 100%; }
+  @media (min-width: 768px) {
+    .col-4 {
+      width: 50%;
+      float: left; } }
+  @media (min-width: 1024px) {
+    .col-4 {
+      width: 25%;
+      float: left; } }
+  .col-4:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.input__text {
+  padding: 0 15px; }
+  .input__text .input__container {
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #313d4f;
+    border-radius: 3px;
+    margin: 12px 0;
+    padding: 12px;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    position: relative; }
+    .input__text .input__container input, .input__text .input__container option {
+      width: 100%;
+      background: transparent;
+      border: 0;
+      outline: 0;
+      color: #fff; }
+    .input__text .input__container .fa {
+      position: absolute;
+      top: 13px;
+      bottom: 13px;
+      right: 13px; }
+  .input__text .placeholder {
+    border: 1px solid #313d4f; }
+  .input__text .hover {
+    border: 1px solid #313d4f;
+    background: #273244; }
+    .input__text .hover:hover {
+      background: #54b12e;
+      color: #fff; }
+  .input__text .focused {
+    border: 1px solid #1b92ed;
+    background: #273244; }
+  .input__text .value {
+    border: 1px solid #1b92ed; }
+  .input__text .success {
+    border: 1px solid #1bb934; }
+  .input__text .disabled {
+    background: #222c3c;
+    border: 1px solid #1b92ed; }
+
+.input__icon {
+  padding: 0 15px; }
+  .input__icon .input__container {
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #313d4f;
+    border-radius: 3px;
+    margin: 12px 0;
+    padding: 12px;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    position: relative; }
+    .input__icon .input__container input {
+      width: 100%;
+      background: transparent;
+      border: 0;
+      outline: 0;
+      color: #fff;
+      padding-left: 40px; }
+    .input__icon .input__container .fa {
+      position: absolute;
+      top: 13px;
+      bottom: 13px;
+      left: 13px; }
+      .input__icon .input__container .fa .fa .fa-times {
+        position: absolute;
+        top: 13px;
+        bottom: 13px;
+        right: 13px; }
+  .input__icon .placeholder {
+    border: 1px solid #313d4f; }
+  .input__icon .hover {
+    border: 1px solid #313d4f;
+    background: #273244; }
+    .input__icon .hover:hover {
+      background: #54b12e;
+      color: #fff; }
+  .input__icon .focused {
+    border: 1px solid #1b92ed;
+    background: #273244; }
+  .input__icon .value {
+    border: 1px solid #1b92ed; }
+  .input__icon .success {
+    border: 1px solid #1bb934; }
+  .input__icon .disabled {
+    background: #222c3c;
+    border: 1px solid #1b92ed; }
+
+.input__search {
+  padding: 0 15px; }
+  .input__search .input__container {
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #313d4f;
+    border-radius: 3px;
+    margin: 12px 0;
+    padding: 12px;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    position: relative; }
+    .input__search .input__container input {
+      width: 100%;
+      background: transparent;
+      border: 0;
+      outline: 0;
+      color: #fff; }
+    .input__search .input__container .fa {
+      position: absolute;
+      top: 13px;
+      bottom: 13px;
+      right: 13px; }
+      .input__search .input__container .fa .fa .fa-times {
+        position: absolute;
+        top: 13px;
+        bottom: 13px;
+        right: 13px; }
+  .input__search .placeholder {
+    border: 1px solid #313d4f; }
+  .input__search .hover {
+    border: 1px solid #313d4f;
+    background: #273244; }
+    .input__search .hover:hover {
+      background: #54b12e;
+      color: #fff; }
+  .input__search .focused {
+    border: 1px solid #1b92ed;
+    background: #273244; }
+  .input__search .value {
+    border: 1px solid #1b92ed; }
+  .input__search .success {
+    border: 1px solid #1bb934; }
+  .input__search .disabled {
+    background: #222c3c;
+    border: 1px solid #1b92ed; }
+
+.user__input {
+  padding: 0 15px; }
+  .user__input .input__container {
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #313d4f;
+    border-radius: 3px;
+    margin: 12px 0;
+    padding: 12px;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    position: relative; }
+    .user__input .input__container input {
+      width: 100%;
+      background: transparent;
+      border: 0;
+      outline: 0;
+      color: #fff; }
+    .user__input .input__container .fa {
+      position: absolute;
+      top: 13px;
+      bottom: 13px;
+      right: 13px; }
+      .user__input .input__container .fa .fa .fa-times {
+        position: absolute;
+        top: 13px;
+        bottom: 13px;
+        right: 13px; }
+  .user__input .placeholder {
+    border: 1px solid #313d4f; }
+  .user__input .hover {
+    border: 1px solid #313d4f;
+    background: #273244; }
+    .user__input .hover:hover {
+      background: #54b12e;
+      color: #fff; }
+  .user__input .focused {
+    border: 1px solid #1b92ed;
+    background: #273244; }
+  .user__input .value {
+    border: 1px solid #1b92ed; }
+  .user__input .success {
+    border: 1px solid #1bb934; }
+  .user__input .disabled {
+    background: #222c3c;
+    border: 1px solid #1b92ed; }

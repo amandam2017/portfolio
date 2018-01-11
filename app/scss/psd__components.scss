@@ -1,0 +1,347 @@
+@import '../scss/mixins'; 
+
+body {
+    background: #1b2431;
+    color: #fff;
+}
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+h4{
+	color: #fff;
+}
+
+h1{
+	font-size: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #fff;
+	margin: 0;
+	padding: 50px 0 15px 0;
+}
+
+p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12px;
+	color: #7f8fa4;
+	margin: 0;
+}
+
+.head__title{
+    padding: 20px 0;
+    margin: 0;
+    background: #273142;
+    color: #fff;
+
+    &:after{
+    	content: "";
+    	display: table;
+    	clear: both;
+    }
+	
+	& .head__title--left{
+		float: left;
+	}
+
+	& .head__title--right{
+		float: right;
+	}
+}
+
+.col-4{
+	width: 100%;
+
+	@include bp(md) {
+		width: 50%;
+		float: left;
+	}
+
+	@include bp(lg) {
+		width: 25%;
+		float: left;
+	}
+
+	&:after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+.input__text{
+
+	padding: 0 15px;
+
+	& .input__container{
+		width: 100%;
+        font-size: 14px;
+        border: 1px solid #313d4f;
+        border-radius: 3px;
+        margin: 12px 0;
+        padding: 12px;
+        outline: none;
+        background: transparent;
+        color: #fff;
+        position: relative;
+
+       & input, option {
+        width: 100%;
+	    background: transparent;
+	    border: 0;
+	    outline: 0;
+	    color: #fff;
+	}
+
+	& .fa {
+			position: absolute;
+		    top: 13px;
+		    bottom: 13px;
+		    right: 13px;
+		}
+	}
+
+
+    .placeholder {
+        border: 1px solid #313d4f;
+    }
+        .hover {
+            border: 1px solid #313d4f;
+            background: #273244;
+            &:hover {
+                background: #54b12e;
+                color: #fff;
+            }
+        }
+        .focused {
+            border: 1px solid #1b92ed;
+            background: #273244;
+        }
+        .value {
+            border: 1px solid #1b92ed;
+        }
+        .success {
+            border: 1px solid #1bb934;
+        }
+        .disabled {
+            background: #222c3c;
+            border: 1px solid #1b92ed;
+        }
+}
+
+// the second column with icons left and right
+.input__icon{
+
+	padding: 0 15px;
+
+	& .input__container{
+		width: 100%;
+        font-size: 14px;
+        border: 1px solid #313d4f;
+        border-radius: 3px;
+        margin: 12px 0;
+        padding: 12px;
+        outline: none;
+        background: transparent;
+        color: #fff;
+        position: relative;
+
+       & input{
+        width: 100%;
+	    background: transparent;
+	    border: 0;
+	    outline: 0;
+	    color: #fff;
+	    padding-left: 40px;
+	}
+
+	& .fa {
+			position: absolute;
+		    top: 13px;
+		    bottom: 13px;
+		    left: 13px;
+
+
+		    & .fa .fa-times{
+				position: absolute;
+			    top: 13px;
+			    bottom: 13px;
+			    right: 13px;
+		    }
+		}
+	}
+
+
+    .placeholder {
+            border: 1px solid #313d4f;
+        }
+        .hover {
+            border: 1px solid #313d4f;
+            background: #273244;
+            &:hover {
+                background: #54b12e;
+                color: #fff;
+            }
+        }
+        .focused {
+            border: 1px solid #1b92ed;
+            background: #273244;
+        }
+        .value {
+            border: 1px solid #1b92ed;
+        }
+        .success {
+            border: 1px solid #1bb934;
+        }
+        .disabled {
+            background: #222c3c;
+            border: 1px solid #1b92ed;
+        }
+}
+
+
+// the third column with search icon
+
+.input__search{
+
+	padding: 0 15px;
+
+	& .input__container{
+		width: 100%;
+        font-size: 14px;
+        border: 1px solid #313d4f;
+        border-radius: 3px;
+        margin: 12px 0;
+        padding: 12px;
+        outline: none;
+        background: transparent;
+        color: #fff;
+        position: relative;
+
+       & input{
+        width: 100%;
+	    background: transparent;
+	    border: 0;
+	    outline: 0;
+	    color: #fff;
+	}
+
+	& .fa {
+			position: absolute;
+		    top: 13px;
+		    bottom: 13px;
+		    right: 13px;
+
+
+		    & .fa .fa-times{
+				position: absolute;
+			    top: 13px;
+			    bottom: 13px;
+			    right: 13px;
+		    }
+		}
+	}
+
+
+    .placeholder {
+            border: 1px solid #313d4f;
+        }
+        .hover {
+            border: 1px solid #313d4f;
+            background: #273244;
+            &:hover {
+                background: #54b12e;
+                color: #fff;
+            }
+        }
+        .focused {
+            border: 1px solid #1b92ed;
+            background: #273244;
+        }
+        .value {
+            border: 1px solid #1b92ed;
+        }
+        .success {
+            border: 1px solid #1bb934;
+        }
+        .disabled {
+            background: #222c3c;
+            border: 1px solid #1b92ed;
+        }
+}
+
+// the last column
+
+.user__input{
+
+	padding: 0 15px;
+
+	& .input__container{
+		width: 100%;
+        font-size: 14px;
+        border: 1px solid #313d4f;
+        border-radius: 3px;
+        margin: 12px 0;
+        padding: 12px;
+        outline: none;
+        background: transparent;
+        color: #fff;
+        position: relative;
+
+       & input{
+        width: 100%;
+	    background: transparent;
+	    border: 0;
+	    outline: 0;
+	    color: #fff;
+	}
+
+	& .fa {
+			position: absolute;
+		    top: 13px;
+		    bottom: 13px;
+		    right: 13px;
+
+
+		    & .fa .fa-times{
+				position: absolute;
+			    top: 13px;
+			    bottom: 13px;
+			    right: 13px;
+		    }
+		}
+	}
+
+
+    .placeholder {
+            border: 1px solid #313d4f;
+        }
+        .hover {
+            border: 1px solid #313d4f;
+            background: #273244;
+            &:hover {
+                background: #54b12e;
+                color: #fff;
+            }
+        }
+        .focused {
+            border: 1px solid #1b92ed;
+            background: #273244;
+        }
+        .value {
+            border: 1px solid #1b92ed;
+        }
+        .success {
+            border: 1px solid #1bb934;
+        }
+        .disabled {
+            background: #222c3c;
+            border: 1px solid #1b92ed;
+        }
+}
+
+
+
+
+

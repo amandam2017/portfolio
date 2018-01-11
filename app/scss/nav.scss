@@ -1,0 +1,182 @@
+@import '../scss/mixins'; 
+
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing:border-box;
+  }
+
+  
+  .header:after{
+      content:"";
+      display: table;
+      clear: both;
+  } 
+  
+  .header{
+      background:$nav__bg-color;
+      margin: 0;
+      padding: 0;
+      line-height: 0;
+      // border: 2px solid;
+      // background-color: yellow;
+
+    @include bp(md) {
+        background-color: $nav__bg-color;
+        border:none;
+    }
+
+      & p,h1,h2,h3,h4,h5,h6{
+          margin: 0;
+      }
+
+      & .header__image{
+        max-width: 80px;
+        float: left;
+
+        img{
+            width: 100%;
+        }
+      }
+  }
+
+
+.nav{
+    display: none;
+    text-align: center;
+
+
+@include bp(lg) {
+    display: block;
+    float: right;
+}
+    &__list{
+        margin:0;
+        padding: 90px 0 0 0;
+        background-color: #fff;
+        // display: none;
+
+        @include bp(lg) {
+            padding:0;
+            display: inline-block;
+            background-color: #2b4608;
+        } 
+    }
+
+        &__list-item{
+            float: none; 
+            display: block; 
+            list-style-type:none;
+            margin-right: 0px;
+            line-height: 40px;
+            color: #255f12;
+            border-bottom: 1px solid #255f12;
+
+            @include bp(md) {
+                float: left;
+                color: #fff;
+            }
+
+                &:hover{
+                    background:$hover-color;
+                }
+
+                &.active a{
+                    background:$mobile-active-background;
+
+                    @include bp(md) {
+                        background:$active-background;
+                    }
+                }
+
+                & a{
+                display: block;
+                padding: 10px 20px;
+                color: #255f12;
+                text-decoration: none;
+
+                @include bp(md) {
+                    padding:20px;
+                    color: #fff;
+                }
+            }
+
+        }
+    }
+
+  .hidden-list{
+      padding:0;
+      display: none;
+
+      & li{
+        background:purple;
+        float: none;
+        padding:1px;
+        line-height: 0;
+      }    
+  } 
+  
+  .nav__list li:hover .hidden-list{
+      display: block;
+      height:0;
+  }
+
+
+  .nav:after{
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  .burger{
+    float:right;
+    display: block;
+    padding: 21px;
+    background: #2b4608;
+
+    @include bp(lg) {
+       display: none;
+       padding:0; 
+    }
+
+}
+
+    .burger__item{
+        width:40px;
+        height:5px;
+        background-color:#fff;
+        margin:6px 0;
+    }
+
+    .burger:after{
+      content:"";
+      display:table;
+      clear:both;
+    }
+
+
+
+
+
+
+// I don't know where it fits I am coming back to this
+
+
+  .my__profile-image{
+      float: left;
+    //   width: 7%;
+  }
+
+  .my__profile-image:after{
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  .my__profile-image img{
+      width: 20%;
+      border-radius:50%;
+  }
+
+  
+  

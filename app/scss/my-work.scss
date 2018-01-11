@@ -1,0 +1,43 @@
+@import '../scss/mixins'; 
+html,body{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+}
+
+body{
+	min-height: 100vh;
+}
+
+
+.my-work{
+	padding-top: 50px;
+}
+
+.my-work:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+.col-4{
+	padding: 10px;
+
+	@include bp(md) {
+		width: 50%;
+		float: left;
+	}
+
+	@include bp(lg) {
+		width: 25%;
+		float: left;
+	}
+}
+
+
+.col-4:after{
+	content: "";
+	display: table;
+	clear: both;
+}

@@ -1,0 +1,123 @@
+.js-calculator{
+  width: 280px;
+  margin: 0 auto;
+  display: block;
+  background-color: #aba89b;
+  // border: 2px solid red;
+}
+
+
+.icalculator{
+    width: 280px;
+    border: 2px solid red;
+    background-color: #363531;
+    .input{
+        width: 254px;
+        height: 60px;
+        text-align: right;
+        font-size: 30px;
+        border-radius: 8px;
+        margin: 3px;
+    }
+    input{
+        width:60px;
+        height:60px; 
+        font-size:30px; 
+        border-radius:8px;
+    }
+}
+
+input{
+    outline:none;
+    width:60px; 
+    height:60px; 
+    font-size:30px;
+    border-radius:8px; 
+    margin:3px;
+
+    &.button--equal{
+        width: 130px;
+    }
+    
+    &.button--clear{
+        width: 130px;
+    }
+}
+
+
+// stopwatch styles
+
+.content{
+    text-align: center;
+}
+
+p,h2{
+    text-align: center;
+}
+
+.stopwatch{
+    max-width:300px;
+    margin: 0 auto;
+    background:orange;
+    border-radius:5px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.75), 0 0 1px rgba(0, 0, 0, 0.15);
+    padding:15px;
+
+    &, & *{
+        transition: all 0.15s ease-out;
+    }
+
+    .controls{
+        display:flex;
+        button{
+          flex-grow: 1;
+          margin: 0 5px 4px;
+          padding: 5px 0;
+          box-shadow: 0 4px rgba(0, 0, 0, 0.75);
+          border:0;
+          outline:0;
+          font-size:16px;
+          color:#fff; 
+          cursor: pointer;
+          font-weight: bold;
+          
+          &:active{
+              margin-bottom: 0;
+              margin-top:4px;
+              box-shadow: none;
+          }
+        }
+        .start{
+            background: green;
+
+            &:hover{
+                background: #6e6;
+            }
+        }
+        .stop{
+            background: orange;
+            
+            &:hover{
+                background: #e66;
+            } 
+        }
+        .reset{
+            background: red;
+            
+            &:hover{
+                background: #66e;
+            }
+        }
+        }
+    .display{
+        font-size:50px;
+        font-family: sans-serif;
+        text-align: center;margin-top: 10px;
+
+        :not(:last-child):after {
+            content:':';
+
+        }
+    }
+}
+

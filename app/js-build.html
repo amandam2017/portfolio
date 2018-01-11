@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+	<title>portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/skillset.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/js-build.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <div onclick="myFunction()" class="burger">
+            <div class="burger__item"></div>
+            <div class="burger__item"></div>
+            <div class="burger__item"></div>
+        </div>
+
+         <div class="header__image">
+            <img src="images/manda.jpg">
+        </div>
+        
+        <nav id="newpost" class="nav">
+            <ul class="nav__list">
+                <li class="nav__list-item active"><a href="index.html" class="nav__link">HOME</a></li>
+                <li class="nav__list-item"><a href="about.html" class="nav__link">ABOUT</a></li>
+                <li class="nav__list-item"><a href="my-work.html" class="nav__link" target="blank">PORTFOLIO</a></li>
+                <li class="nav__list-item"><a href="skillset.html" class="nav__link">SKILL SET</a>
+                    <!-- <ul class="hidden-list">
+                        <li><a href="#">if</a></li>
+                        <li><a href="#">else</a></li>
+                        <li><a href="#">else-if</a></li>
+                    </ul> -->
+                </li>
+                <li class="nav__list-item"><a href="contact.html" class="nav__link">GET INTOUCH</a></li>
+            </ul>
+
+        </nav>
+    </header>
+	<div class="container">
+      
+        <section class="content">
+            <h1>Building JavaScript Boilerplate</h1>
+            <div class="variables">
+                <h2>I am gonna start with variables</h2>
+                <p>But firstly lemme show you my first cool thing that I have build</p>
+            </div>
+        </section>
+        <section>
+            <p>A Calculator with JavaScript</p>
+            <div class="js-calculator">
+                <form name="icalculator">
+                    <input name="display" placeholder="0" class="input" style="width:270px; height:60px; text-align:right; font-size:30px; border-radius:8px; margin:3px">
+                    
+                    <input type="button" value="7" onclick="document.icalculator.display.value +='7'">
+                    <input type="button" value="8" onclick="document.icalculator.display.value +='8'">
+                    <input type="button" value="9" onclick="document.icalculator.display.value +='9'">
+
+                    <input type="button" value="+" onclick="btnplus()" style="width:60px; height:60px; font-size:30px; border-radius:8px">
+                    
+                    <input type="button" value="4" onclick="document.icalculator.display.value +='4'">
+                    <input type="button" value="5" onclick="document.icalculator.display.value +='5'">
+                    <input type="button" value="6" onclick="document.icalculator.display.value +='6'">
+
+                    <input type="button" value="-" onclick="btnsub()" style="width:60px; height:60px; font-size:30px; border-radius:8px">
+                    
+                    <input type="button" value="1" onclick="document.icalculator.display.value +='1'">
+                    <input type="button" value="2" onclick="document.icalculator.display.value +='2'">
+                    <input type="button" value="3" onclick="document.icalculator.display.value +='3'">
+
+                    <input type="button" value="*" onclick="btnmult()" style="width:60px; height:60px; font-size:30px; border-radius:8px">
+                    
+                    <input type="button" value="0" onclick="document.icalculator.display.value +='0'">
+                    <input type="button" value="%" onclick="btnMod()">
+                    <input type="button" value="." onclick="btndot()">
+                    <input type="button" value="/" onclick="btndiv()">
+                  
+                    <input type="button" value="=" onclick="document.icalculator.display.value = eval(document.icalculator.display.value)" class="button--equal">
+                    <input type="button" value="C" onclick="btnclear()" class="button--clear">
+                </form>
+            </div>
+        </section>
+        <section>
+            <h4>Stop Watch</h4>
+            <div class="stopwatch">
+                <div class="controls">
+                    <button class="start">START</button>
+                    <button class="stop">STOP</button>
+                    <button class="reset">RESET</button>
+                </div>
+                <div class="display">
+                    <span class="minutes">00</span>
+                    <span class="seconds">00</span>
+                    <span class="sentiseconds">00</span>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </section>
+	</div>
+     <div class="push-footer">
+        <div class="social">
+            <h2>Follow & Like Me On:</h2>
+            <div class="social__icon">
+                <a href="#" class="social__link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </div>
+            <div class="social__icon">
+                <a href="#" class="social__link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+            <div class="social__icon">
+                <a href="#" class="social__link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="social__icon">
+                <a href="#" class="social__link"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__container">
+
+               <div class="col-3 footer__link">
+                   <a href="#">amandamaarman2017@gmail.com</a>
+               </div>
+
+               <div class="col-3 footer__nav">
+                   <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="my-work.html">Portfolio</a></li>
+                    </ul>
+               </div>
+
+               <div class="col-3 footer__social-icons">
+                   <a href="#">@2017 Amanda Maarman</a>
+               </div>
+
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="js/main.js"></script>
+</html>

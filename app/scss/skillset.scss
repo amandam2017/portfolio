@@ -1,0 +1,118 @@
+@import '../scss/mixins'; 
+
+body{
+	// background: #dbecaf;
+	background: #fff;
+}
+
+h4{
+	font-size: 50px;
+	line-height: 1.4;
+	text-align: center;
+}
+
+.col-3{
+	width: 100%;
+	float: none;
+
+	@include bp(sm) {
+		width: 50%;
+		float: left;
+		padding: 10px;
+	}
+
+	@include bp(lg) {
+		width: 33.33%;
+		float: left;
+		padding: 10px;
+	}
+}
+
+.col-3:after{
+	content:"";
+	display: table;
+	clear: both;
+}
+
+.skillset{
+	width: 100%;
+	text-align: center;
+
+	.skillset__html-css{
+		width: 100%;
+		padding-top: 50px;
+	}
+
+	.image{
+		float: none;
+		text-align: center;
+
+		img{
+			max-width: 100%;
+		}
+	}
+}
+
+.achievements{
+	display: block;
+
+	&:after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	.achievements__image{
+		position: relative;
+
+		img{
+			width: 100%;
+		}
+	}
+
+
+	.achievements__link{
+		position: absolute;
+		bottom: 80px;
+		left: 60px;
+		right: 60px;
+		text-align: center;
+		text-decoration: none;
+		display: block;
+		color: #e6c61d;
+		padding: 10px 0;
+	}
+}
+
+
+.links{
+	text-align: center;
+	font-size: 20px;
+
+	a{
+		text-decoration: none;
+		color: #e6c61d;
+		display: block;
+	}
+}
+
+.links:before{
+	content:"";
+	display: table;
+	clear: both;
+}
+
+
+.tools{
+	text-align: left;
+	padding-top: 50px;
+	ul{
+		padding: 0;
+		margin: 0;
+
+		li{
+			list-style-type: none;
+			padding:10px 0;
+		}
+	}
+}

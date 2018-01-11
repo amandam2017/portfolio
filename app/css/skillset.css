@@ -1,0 +1,82 @@
+body {
+  background: #fff; }
+
+h4 {
+  font-size: 50px;
+  line-height: 1.4;
+  text-align: center; }
+
+.col-3 {
+  width: 100%;
+  float: none; }
+  @media (min-width: 568px) {
+    .col-3 {
+      width: 50%;
+      float: left;
+      padding: 10px; } }
+  @media (min-width: 1024px) {
+    .col-3 {
+      width: 33.33%;
+      float: left;
+      padding: 10px; } }
+
+.col-3:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.skillset {
+  width: 100%;
+  text-align: center; }
+  .skillset .skillset__html-css {
+    width: 100%;
+    padding-top: 50px; }
+  .skillset .image {
+    float: none;
+    text-align: center; }
+    .skillset .image img {
+      max-width: 100%; }
+
+.achievements {
+  display: block; }
+  .achievements:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .achievements .achievements__image {
+    position: relative; }
+    .achievements .achievements__image img {
+      width: 100%; }
+  .achievements .achievements__link {
+    position: absolute;
+    bottom: 80px;
+    left: 60px;
+    right: 60px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    color: #e6c61d;
+    padding: 10px 0; }
+
+.links {
+  text-align: center;
+  font-size: 20px; }
+  .links a {
+    text-decoration: none;
+    color: #e6c61d;
+    display: block; }
+
+.links:before {
+  content: "";
+  display: table;
+  clear: both; }
+
+.tools {
+  text-align: left;
+  padding-top: 50px; }
+  .tools ul {
+    padding: 0;
+    margin: 0; }
+    .tools ul li {
+      list-style-type: none;
+      padding: 10px 0; }
