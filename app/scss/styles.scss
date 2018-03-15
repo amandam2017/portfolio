@@ -189,11 +189,13 @@ h4{
 	    height: 50px;
 	    margin: 30px 0;
 	}
+
 	&__icon:after{
 		content: "";
 		display: table;
 		clear: both;
 	}
+
 	&__link{
 		text-decoration: none;
 		font-size: 30px;
